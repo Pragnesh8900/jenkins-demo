@@ -1,0 +1,4 @@
+
+docker volume create --opt type="nfs" --opt o=addr="10.20.33.98,rw" --opt device=":/pragnesh" nfs-volume
+
+docker run -d -p 8080:443 --name myapp-test1 -v nfs-volume:/root/abc  myimage:latest
