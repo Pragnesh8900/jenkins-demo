@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp_jenkins
+  name: myapp-jenkins
 spec:
   selector:
     matchLabels:
-      app: myapp_jenkins
+      app: myapp-jenkins
   template:
     metadata:
       labels:
-        app: myapp_jenkins
+        app: myapp-jenkins
     spec:
       containers:
-      - name: myapp_jenkins
+      - name: myapp-jenkins
         image: docker.io/pragnesh9789/jenkins-img:latest
         ports:
         - containerPort: 443
