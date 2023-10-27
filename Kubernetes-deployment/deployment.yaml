@@ -15,4 +15,4 @@ spec:
       - name: myapp-jenkins
         image: docker.io/pragnesh9789/jenkins-img:latest
         ports:
-        - containerPort: 8080
+        - containerPort: 80
